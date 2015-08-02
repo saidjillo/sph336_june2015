@@ -50,7 +50,7 @@ return (((uint16_t)(UART_S1_REG(channel) & UART_S1_RDRF_MASK)) == UART_S1_RDRF_M
 char uart_read(void){
 return uart_getchar (UART5_BASE_PTR);
 }
-//send a char to UART5_TX
+//send a char to UART3_TX
 void uartsend(uint8_t ch){
 uart_putchar (UART5_BASE_PTR,ch);
 }
